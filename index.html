@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      
+      position: relative;
+      height: 100px;
+    }
+
+    .header {
+      background-color: #cccccc;
+       background-image: linear-gradient(white,white,#4C7CBA);
+        border-bottom:5px solid #4C7CBA;
+      padding: 10px;
+      text-align: center;
+      position: relative;
+
+      
+    }
+
+    .logo-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1px;
+      margin-top: 1px;
+
+    }
+
+    .logo {
+      width: 190px;
+    
+    }
+
+    .logo.left {
+      position: absolute;
+      top: 1px;
+      left: 1px;
+       width: 100px;
+    }
+
+    .logo.right {
+      position: absolute;
+      top: 1px;
+      right: 1px;
+      height: 110px;
+    }
+
+    .logo img {
+      max-width: 100%;
+      
+    }
+
+    .project-name {
+      font-weight: bold;
+       font-family: "Times New Roman", Times, serif;
+    }
+
+    .link-group {
+      margin-bottom: 20px;
+    
+      
+    }
+
+    .group-name {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10px;
+      padding-top: 15px;
+        color:Blue;
+        font-family:"Times New Roman", Times, serif;
+  font-size:20px;
+    }
+
+    .link-group-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .link-group-list a {
+      flex-basis: 50%;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      text-decoration: none;
+      color: #333;
+      box-sizing: border-box;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+        font-family:Calibri;
+  font-size:20px; 
+  font-weight:bold;
+
+    }
+
+    .link-group-list a img {
+      margin-right: 10px;
+      max-width: 50px;
+      height: 60px;
+    }
+
+    @media (max-width: 480px) {
+      .link-group-list a {
+        flex-basis: 100%;
+        font-size: 14px;
+      }
+    }
+    @media (max-width: 768px) {
+      .logo-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .logo {
+        width: 190px;
+        height: auto;
+      }
+
+      .logo.left {
+        position: relative;
+        top: 1px;
+        left: 1px;
+        margin-bottom: 5px;
+      }
+
+      .logo.right {
+        position: relative;
+        top: auto;
+        right: auto;
+      }
+    }
+     @media (max-width: 480px) {
+      .logo {
+        width: 190px;
+       
+      }
+
+      .logo-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo-container">
+        <div class="logo left">
+          <img src="Images/rhenix_logo.png" alt="Left Logo">
+        </div>
+        
+      </div>
+      <div class="project-name">
+        SENIOR CITIZEN PROJECT
+      </div>
+    </div>
+    <div style="background-image: url(Images/background.jpg);height: auto;
+    
+     background-size: cover;">
+    <div class="link-group" >
+      <div class="group-name">ONE TIME ENTRY</div>
+      <div class="link-group-list">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfgtGKRcxxqmrbCs1oonQeyUVhg-u1RQMPiV8KjmDKD_8EYjA/viewform" target="_blank">
+          <img src="Images/patient details.png" alt="Patient Info"> 
+       Patient Info
+        </a>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScl7f_W2bbe65ZY8zVvQhK2D_iz1tQKYvh9a4f3qKmSAiFK8A/viewform" target="_blank">
+          <img src="Images/medicaldetails.png" alt="Medical Details">
+          Medical Details
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6tpc0eTutuxVXqpqtkdOPQskaoSU-gclRve1oouTxh4rHzg/viewform" target="_blank">
+          <img src="Images/basicfooddetails.png" alt="Basic Food Details">
+          Basic Food Details
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8wdkQIE9QxEm70KVHZd6U43zwQEZQ0AOVdG1vctX46SVpGA/viewform" target="_blank">
+          <img src="Images/purchase.png" alt="Medication Purchase">
+         Medication Purchase
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3cW0q0vR-X-D81xhkkCLQUHeqY3IOlLb9-aa_w5HEVWTbDA/viewform" target="_blank">
+          <img src="Images/doctorappointment.jpg" alt="Doctor Appointment and Visit">
+          Doctor Appointment and Visit
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfC-uiblgFPanX2S2SK7BD4nlRz1L9GQJ28w4TSDMbwAVwMWQ/viewform" target="_blank">
+          <img src="Images/medicaltestrecording.png"
+            alt="Medical Test Recording" >
+          Medical Test Recording
+        </a>
+      </div>
+    </div>
+    <div class="link-group" >
+      <div class="group-name">DAILY ENTRY</div>
+      <div class="link-group-list">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVmfD-pp_raI7aJSX_SrX6LnT2x_tgM4k7a5hfIS3cUCryzQ/viewform" target="_blank">
+          <img src="Images/medicationmonitoring.jpeg"
+            alt="Daily Medication Monitoring" >
+         Medication Monitoring
+        </a>
+         <a href="https://docs.google.com/forms/d/e/1FAIpQLScdfOrBqEzch4EwRZs1PBu5DKUmJJKrCmGUYm-8tUXd3XNzOQ/viewform" target="_blank">
+          <img src="Images/vitals2.jpeg"
+            alt="Daily Vital Signs Recording" >
+         Vital Signs Recording
+        </a>
+         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNwz7WGeEIyqWHwWLF9R40l6g0wsgCZI8_HMQ4EZV1tUVx4Q/viewform" target="_blank">
+          <img src="Images/diet.png"
+            alt="Diet" >
+          Diet
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdx7NKWwSEMQQS6Z8WYdWLNCSwoeUhofhEoXC640SGKC73m9g/viewform" target="_blank">
+          <img src="Images/lifestyle_sleep.png"
+            alt="Life style and sleep" >
+         Life Style and Sleep
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
